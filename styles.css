@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    height: 100vh;
+    width: 100%;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* #######
+Banner
+######### */
+
+.banner {
+    background-color: rgb(72, 157, 129);
+    width: 100%;
+    height: 2em;
+    position: fixed;
+    z-index: 1;
+}
+
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: .5em 2em; 
+}
+
+.banner-socials-items {
+    display: flex;
+    gap: .8em;
+}
+
+.banner-socials-item a {
+    color: white;
+}
+
+.banner-socials-item a:hover,
+.banner-socials-item a:focus {
+    color: #c0d72f;
+}
+
+/* ##############################
+Header
+################################ */
+
+.header {
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    z-index: 1;
+    top: 1.9em;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    padding: .5em 2em;
+}
+
+.logo img {
+    width: 70px;
+    cursor: pointer;
+}
+
+.toggle-item i {
+    color: rgb(5, 97, 86);
+    font-size: 40px;
+    position: relative;
+    top: .37em;
+    cursor: pointer;
+}
+
+.toggle-item:hover,
+.toggle-item:focus {
+    opacity: 70%;
+}
+
+.nav {
+    margin-top: 15px;
+    position: relative;
+    left: -1em;
+    top: -.647em;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    width: 60%;
+    border-radius: 0 0 8px 0;
+    z-index: -1;
+    display: none;
+}
+
+.nav-item {
+    position: relative;
+    padding: 1.2em .8em;
+}
+
+.nav-item a {
+    padding-left: 20px;
+    color: rgb(5, 97, 86);
+    display: block;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+
+.subnav-items {
+    position: absolute;
+    left: 2em;
+    top: 3em;
+    width: 13em;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 7px 10px rgba(0,0,0,.1);
+    border-radius: 0 0 8px 8px;
+    border-top: 5px solid #c0d72f;
+    display: none;
+    z-index: 1;
+}
+
+.subnav-item {
+    padding: .7em 0;
+    width: 100%;
+}
+
+.subnav-item a {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #c0d72f;
+}
+
+.subnav-item:last-child {
+    border-radius: 0 0 8px 8px;
+}
+
+.subnav-item:hover,
+.subnav-item:focus  {
+    background-color: rgb(5, 97, 86);
+    
+}
+
+.nav-item:hover > .subnav-items,
+.nav-item:focus > .subnav-items {
+    display: initial;
+}
+
+/* ##############################
+Main
+################################ */
+
+.hero-section {
+    background:url(images/1.jpeg) rgba(0, 0, 0, .600) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: multiply;
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    top: 5em;
+    bottom: 0;
+    text-align: center;
+}
+
+.hero-section-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+    margin: auto;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+.hero-section-title {
+    font-weight: 900;
+    font-size: 1.6em;
+    margin-bottom: .2em;
+}
+
+.hero-section-sub-title {
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.hero-section-button {
+    margin-top: 2em;
+    padding: .5em 2.5em;
+    border: .2em solid white;
+    border-radius: .2em;
+    background: none;
+    color: aquamarine;
+    font-weight: 900;
+    font-size: 1em;
+}
+
+.about-us {
+    width: 100%;
+    position: relative;
+}
+
+.about-us figure {
+    width: 80%;
+    margin: 8em auto 0 auto;
+
+}
+
+.about-us-image {
+    border-radius: .5em .5em 0 0;
+}
+
+.about-us-text {
+    position: relative;
+    top: -2em;
+    background-color: white;
+    padding: 1em 0;
+    text-align: justify;
+}
+
+.about-us-title {
+    padding-bottom: .2em;
+}
+
+.about-us-content {
+    line-height: 1.3em;
+}
+
+.programs {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.programs-title {
+    text-align: center;
+    margin-bottom: .8em;
+}
+
+.programs-card {
+    height: 18em;
+    background:url(images/2.jpeg) rgba(0, 0, 0, .350) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 2em;
+    background-blend-mode: multiply;
+    border-radius: .3em;
+    box-shadow: 6px 6px 15px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+.programs-card-caption {
+    color: white;
+    height: 13em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 1.4em;
+}
+
+.programs-card-content {
+    position: relative;
+    top: -14.5em;
+    width: 90%;
+    margin: auto;
+    font-weight: 500;
+    color: black;
+    display: none;
+    line-height: 1.5em;
+}
+
+.programs-card:hover,
+.programs-card:focus {
+    background: aquamarine;
+}
+
+.programs-card:hover > .programs-card-content,
+.programs-card:focus > .programs-card-content {
+    background: aquamarine;
+    display: block;
+}
+
+
+/* ##############################
+Footer
+################################ */
+
+.footer {
+    position: relative;
+    bottom: 0;
+    background-color: aquamarine;
+    width: 100%;
+    font-weight: 500;
+}
+
+.footer-container {
+    width: 90%;
+    margin: auto;
+    padding: 1em 0;
+}
+
+.footer-top {
+    margin-bottom: 3em;
+}
+
+.footer-top-support-us {
+    margin-bottom: 1em;
+}
+
+.footer-top-support-us-title,
+.footer-top-get-in-touch-title {
+    margin-bottom: .5em;
+}
+
+.footer-top-support-us-content,
+.footer-top-get-in-touch-content {
+    line-height: 1.4em;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: .8em;
+}
+
+.footer-bottom-socials {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7em;
+    margin-bottom: .8em;
+}
+
+
